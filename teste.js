@@ -1,7 +1,8 @@
-console.log("v2");
+console.log("v1");
 
 container = document.getElementsByClassName("left")[0];
 var div = document.createElement('div');
+div.align = "rigth";
 container.appendChild(div);
 
 for(var i = 0; i < 31; i++){
