@@ -1,4 +1,4 @@
-console.log("AddMeFast v1");
+console.log("AddMeFast v2");
 var step = [0,0];
 if(getCookie("amfstep") != "0,0")
   setCookie("amfstep","0");
@@ -14,7 +14,7 @@ checks();
 
 function checks(){
   container = document.getElementsByClassName("add_site_item_sub");
-  for(var i = 0; i < 1; i++){
+  for(var i = 0; i < 31; i++){
     var cb = document.createElement('input');
     cb.type = "checkbox";
     if(onoff[i] == 1)
