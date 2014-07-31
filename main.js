@@ -1,4 +1,4 @@
-console.log("AddMeFast v1");
+console.log("AddMeFast v2");
 var step = [0,0];
 if(getCookie("amfstep") != "0,0")
   setCookie("amfstep","0");
