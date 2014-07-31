@@ -1,14 +1,14 @@
-console.log("AddMeFast v2");
+console.log("AddMeFast v1");
 var step = [0,0];
 if(getCookie("amfstep") != "0,0")
   setCookie("amfstep","0");
 else
   step = getCookie("amfstep").split(',')[0];
-var onoff = [1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var onoff = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 if(getCookie("amfonoff") != "0,0")
-  setCookie("amfonoff","1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1");
+  setCookie("amfonoff","0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0");
 else
-  step = getCookie("amfonoff").split(',')[0];
+  onoff = getCookie("amfonoff").split(',');
 
 checks();
 
