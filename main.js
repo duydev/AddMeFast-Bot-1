@@ -1,4 +1,9 @@
 console.log("AddMeFast v1");
+if(getCookie("amfstep") != "0,0")
+  setCookie("amfstep","0");
+
+if(getCookie("amfonoff") != "0,0")
+  setCookie("amfonoff","");
 
 function setCookie(nome,str){
   var expires = new Date();
