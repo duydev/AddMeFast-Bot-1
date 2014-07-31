@@ -5,7 +5,7 @@ var div = document.createElement('div');
 div.align = "rigth";
 container.appendChild(div);
 
-for(var i = 0; i < 31; i++){
+for(var i = 0; i < 1; i++){
   var cb = document.createElement('input');
   cb.type = "checkbox";
   cb.id = i;
