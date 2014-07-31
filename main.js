@@ -1,9 +1,14 @@
 console.log("AddMeFast v1");
+var step = [0,0];
 if(getCookie("amfstep") != "0,0")
   setCookie("amfstep","0");
+else
+  step = getCookie("amfstep").split(',')[0];
 
 if(getCookie("amfonoff") != "0,0")
-  setCookie("amfonoff","");
+  setCookie("amfonoff","1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1");
+else
+  step = getCookie("amfonoff").split(',')[0];
 
 function setCookie(nome,str){
   var expires = new Date();
