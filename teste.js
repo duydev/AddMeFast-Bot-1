@@ -1,4 +1,4 @@
-console.log("v1");
+console.log("v2");
 
 container = document.getElementsByClassName("left")[0];
 var div = document.createElement('div');
