@@ -1,4 +1,4 @@
-console.log("AddMeFast v2");
+console.log("AddMeFast v1");
 var step = [0,0];
 if(getCookie("amfstep") != "0,0")
   setCookie("amfstep","0");
@@ -9,6 +9,8 @@ if(getCookie("amfonoff") != "0,0")
   setCookie("amfonoff","1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1");
 else
   step = getCookie("amfonoff").split(',')[0];
+
+checks();
 
 function checks(){
   container = document.getElementsByClassName("add_site_item_sub");
