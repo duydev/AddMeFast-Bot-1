@@ -1,5 +1,5 @@
 console.log("v2");
-
+checks();
 function checks(){
   container = document.getElementsByClassName("add_site_item_sub");
   for(var i = 0; i < 1; i++){
