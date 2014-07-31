@@ -1,6 +1,6 @@
 console.log("v1");
 
-container = document.getElementsByClassName("left");
+container = document.getElementsByClassName("left")[0];
 var div = document.createElement('div');
 container.appendChild(div);
 
