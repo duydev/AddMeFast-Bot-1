@@ -5,11 +5,11 @@ if(step == 0){
   document.getElementsByClassName("add_site_item_sub")[Math.floor((Math.random() * 31) + 0)].getElementsByTagName("a")[0].click();
 }
 else if(step == 1){
-  setCookie("amfstep","2")
+  setCookie("amfstep","2");
   document.getElementsByClassName("single_like_button btn3-wrap")[0].click();
 }
 else{
-  window.alert("Oi");
+  setCookie("amfstep","0");
 }
 
 function setCookie(nome,str){
