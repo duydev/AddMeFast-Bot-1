@@ -1,6 +1,6 @@
 var step = getCookie("amfstep").split(',')[0];
-console.log("("+step+") "+document.getElementsByClassName("add_site_item_sub")[step].textContent);
-setCookie("amfstep",(step+1)+",0");
+var next = step++;
+setCookie("amfstep",next+",0");
 document.getElementsByClassName("add_site_item_sub")[step].getElementsByTagName("a")[0].click();
 
 function setCookie(nome,str){
