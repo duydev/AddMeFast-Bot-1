@@ -1,5 +1,5 @@
 var step = getCookie("amfstep").split(',')[0];
-var next = step++;
+var next = parseInt(step)+1;
 setCookie("amfstep",next+",0");
 document.getElementsByClassName("add_site_item_sub")[step].getElementsByTagName("a")[0].click();
 
