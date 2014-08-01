@@ -1,4 +1,4 @@
-console.log("AddMeFast v2");
+console.log("AddMeFast v1");
 var step = getCookie("amfstep")[0];
 if(step == 0){
   setCookie("amfstep","1");
@@ -6,8 +6,8 @@ if(step == 0){
 }
 else if(step == 1){
   setCookie("amfstep","2");
-  document.getElementsByClassName("btn3")[0].click();
-  window.alert(document.getElementsByClassName("btn3").length);
+  document.getElementsByClassName("btn3")[1].click();
+  //window.alert(document.getElementsByClassName("btn3").length);
 }
 else{
   setCookie("amfstep","0");
