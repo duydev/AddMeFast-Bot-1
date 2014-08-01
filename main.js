@@ -1,27 +1,15 @@
 console.log("AddMeFast v1");
-var step = [0,0];
-if(getCookie("amfstep") != "0,0")
-  setCookie("amfstep","0");
-else
-  step = getCookie("amfstep").split(',')[0];
-var onoff = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-if(getCookie("amfonoff") != "0,0")
-  setCookie("amfonoff","0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0");
-else
-  onoff = getCookie("amfonoff").split(',');
-
-checks();
-
-function checks(){
-  container = document.getElementsByClassName("add_site_item_sub");
-  for(var i = 0; i < 31; i++){
-    var cb = document.createElement('input');
-    cb.type = "checkbox";
-    if(onoff[i] == 1)
-      cb.checked = true;
-    cb.id = i;
-    container[i].appendChild(cb);
-  }
+var step = getCookie("amfstep")[0];
+if(step == 0){
+  setCookie("amfstep","1");
+  document.getElementsByClassName("add_site_item_sub")[Math.floor((Math.random() * 31) + 0))].click();
+}
+else if(step == 1){
+  setCookie("amfstep","2")
+  document.getElementsByClassName("single_like_button btn3-wrap")[0].click();
+}
+else{
+  window.alert("Oi");
 }
 
 function setCookie(nome,str){
