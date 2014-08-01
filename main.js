@@ -1,9 +1,10 @@
-console.log("AddMeFast v1");
+console.log("AddMeFast v2");
 var url = window.location.href;
-var step = getCookie("amfstep").split(',')[0];
-var opt = getCookie("amfstep").split(',')[1];
 
-if(url.indexOf("addmefast.com") != null){
+if(url.indexOf("addmefast") != null){
+  window.alert("Entrou 1");
+  var step = getCookie("amfstep").split(',')[0];
+  var opt = getCookie("amfstep").split(',')[1];
   switch(step){
     case 0:
       opt = 6;//Math.floor((Math.random() * 30) + 0);
