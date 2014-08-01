@@ -1,4 +1,4 @@
-console.log("AddMeFast v2");
+console.log("AddMeFast v1");
 var step = getCookie("amfstep")[0];
 if(step == 0){
   setCookie("amfstep","1");
@@ -16,7 +16,7 @@ function setCookie(nome,str){
   var expires = new Date();
   expires.setTime(expires.getTime()+(30*24*60*60*1000));
   expires = expires.toGMTString();
-  document.cookie = nome+"="+str+"; expires="+expires;
+  document.cookie = nome+"="+str+"; expires="+expires+"; path=/";
 }
 
 function getCookie(name){
