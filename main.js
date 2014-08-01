@@ -21,6 +21,7 @@ if(url.indexOf("addmefast") != null){
   }
 }
 else{
+  window.alert("Entrou 2");
   switch(opt){
     case 0://Facebook Likes
 
