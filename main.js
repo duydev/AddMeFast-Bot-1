@@ -2,7 +2,7 @@ console.log("AddMeFast v1");
 var step = getCookie("amfstep")[0];
 if(step == 0){
   setCookie("amfstep","1");
-  document.getElementsByClassName("add_site_item_sub")[Math.floor((Math.random() * 31) + 0))].click();
+  document.getElementsByClassName("add_site_item_sub")[Math.floor((Math.random() * 31) + 0)].click();
 }
 else if(step == 1){
   setCookie("amfstep","2")
