@@ -3,7 +3,7 @@ var step = getCookie("amfstep").split(',')[0];
 var opt = getCookie("amfstep").split(',')[1];
 
 if(step == 0){
-  opt = 0;//Math.floor((Math.random() * 30) + 0);
+  opt = 6;//Math.floor((Math.random() * 30) + 0);
   setCookie("amfstep","1,"+opt);
   document.getElementsByClassName("add_site_item_sub")[opt].getElementsByTagName("a")[0].click();
 }
@@ -16,95 +16,92 @@ else if(window.location.href.indexOf("addmefast.com") == null){
     case 0://Facebook Likes
 
     break;
-    case 1://Facebook Share
+    case 1://Facebook Followers
 
     break;
-    case 2://Facebook Followers
+    case 2://Facebook Post Like
 
     break;
-    case 3://Facebook Post Like
+    case 3://Facebook Post Share
 
     break;
-    case 4://Facebook Post Share
+    case 4://Instagram Followers
 
     break;
-    case 5://Instagram Followers
+    case 5://Instagram Likes
 
     break;
-    case 6://Instagram Likes
-
-    break;
-    case 7://Twitter Followers
+    case 6://Twitter Followers
       document.getElementsByClassName("user-actions-follow-button js-follow-btn follow-button btn")[0].click();
       setTimeout(close,2000);
     break;
-    case 8://Twitter Tweets
+    case 7://Twitter Tweets
 
     break;
-    case 9://Twitter Retweets
+    case 8://Twitter Retweets
 
     break;
-    case 10://Twitter Favorites
+    case 9://Twitter Favorites
 
     break;
-    case 11://YouTube Subscribe
+    case 10://YouTube Subscribe
 
     break;
-    case 12://YouTube Likes
+    case 11://YouTube Likes
 
     break;
-    case 13://YouTube Favorites
+    case 12://YouTube Favorites
 
     break;
-    case 14://YouTube Views
+    case 13://YouTube Views
 
     break;
-    case 15://Google Circles
+    case 14://Google Circles
 
     break;
-    case 16://Google Share
+    case 15://Google Share
 
     break;
-    case 17://Ask.fm Likes
+    case 16://Ask.fm Likes
 
     break;
-    case 18://Vine Followers
+    case 17://Vine Followers
 
     break;
-    case 19://Vine Likes
+    case 18://Vine Likes
 
     break;
-    case 20://Vine Revines
+    case 19://Vine Revines
 
     break;
-    case 21://Vkontakte Pages
+    case 20://Vkontakte Pages
 
     break;
-    case 22://Vkontakte Groups
+    case 21://Vkontakte Groups
 
     break;
-    case 23://MySpace Friends
+    case 22://MySpace Friends
 
     break;
-    case 24://Pinterest Followers
+    case 23://Pinterest Followers
 
     break;
-    case 25://Pinterest Repins
+    case 24://Pinterest Repins
 
     break;
-    case 26://Pinterest Likes
+    case 25://Pinterest Likes
 
     break;
-    case 27://Reverbnation Fans
+    case 26://Reverbnation Fans
 
     break;
-    case 28://SoundCloud Follow
+    case 27://SoundCloud Follow
 
     break;
-    case 29://SoundCloud Plays
+    case 28://SoundCloud Plays
 
     break;
-    case 30://StumbleUpon
+    case 29://StumbleUpon
 
     break;
   }
