@@ -3,20 +3,21 @@ var url = window.location.href;
 var step = getCookie("amfstep").split(',')[0];
 var opt = getCookie("amfstep").split(',')[1];
 
-if(url.indexOf("addmefast.com") != null)
-switch(step){
-  case 0:
-    opt = 6;//Math.floor((Math.random() * 30) + 0);
-    setCookie("amfstep","1,"+opt);
-    document.getElementsByClassName("add_site_item_sub")[opt].getElementsByTagName("a")[0].click();
-  break;
-  case 1:
-    setCookie("amfstep","2,"+opt);
-    document.getElementsByClassName("btn3")[1].click();
-  break;
-  case 2:
-    setCookie("amfstep","0,0");
-  break;
+if(url.indexOf("addmefast.com") != null){
+  switch(step){
+    case 0:
+      opt = 6;//Math.floor((Math.random() * 30) + 0);
+      setCookie("amfstep","1,"+opt);
+      document.getElementsByClassName("add_site_item_sub")[opt].getElementsByTagName("a")[0].click();
+    break;
+    case 1:
+      setCookie("amfstep","2,"+opt);
+      document.getElementsByClassName("btn3")[1].click();
+    break;
+    case 2:
+      setCookie("amfstep","0,0");
+    break;
+  }
 }
 else{
   switch(opt){
