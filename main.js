@@ -1,4 +1,4 @@
-console.log("AddMeFast v2");
+console.log("AddMeFast v1");
 var url = window.location.href;
 
 if(url.indexOf("addmefast") != null){
