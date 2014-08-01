@@ -1,11 +1,6 @@
-console.log("v2");
-checks();
-function checks(){
-  container = document.getElementsByClassName("add_site_item_sub");
-  for(var i = 0; i < 1; i++){
-    var cb = document.createElement('input');
-    cb.type = "checkbox";
-    cb.id = i;
-    container[i].appendChild(cb);
-  }
+document.getElementsByClassName("user-actions-follow-button js-follow-btn follow-button btn")[0].click();
+setTimeout(close,2000);
+
+function close(){
+	windows.close();
 }
