@@ -1,4 +1,5 @@
 console.log("AddMeFast v2");
+var url = window.location.href;
 var step = getCookie("amfstep").split(',')[0];
 var opt = getCookie("amfstep").split(',')[1];
 
