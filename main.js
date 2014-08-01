@@ -1,9 +1,9 @@
-console.log("AddMeFast v3");
+console.log("AddMeFast v1");
 var step = getCookie("amfstep").split(',')[0];
 var opt = getCookie("amfstep").split(',')[1];
 
 if(step == 0){
-  opt = 7;//Math.floor((Math.random() * 30) + 0);
+  opt = 0;//Math.floor((Math.random() * 30) + 0);
   setCookie("amfstep","1,"+opt);
   document.getElementsByClassName("add_site_item_sub")[opt].getElementsByTagName("a")[0].click();
 }
