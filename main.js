@@ -6,7 +6,7 @@ if(step == 0){
 }
 else if(step == 1){
   setCookie("amfstep","2");
-  document.getElementsByClassName("single_like_button btn3-wrap")[0].click();
+  document.getElementsByClassName("btn3")[0].click();
 }
 else{
   setCookie("amfstep","0");
