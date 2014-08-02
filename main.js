@@ -91,28 +91,100 @@
   
     break;
     case 23://MySpace Friends
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("myspace") == -1)
+          window.open("http://addmefast.com/free_points/myspace", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("connectButton notReversed connected tooltips")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 24://Pinterest Followers
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("pinterest") == -1)
+          window.open("http://addmefast.com/free_points/pinterest", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("UserFollowButton btn rounded Button primary Module hasText notNavigatable ui-FollowButton")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 25://Pinterest Repins
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("pinterest_repin") == -1)
+          window.open("http://addmefast.com/free_points/pinterest_repin", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("rounded Button repinSmall pinIt primary Module ajax btn")[0].click();
+        setTimeout(closeWindow,4500);
+      }
     break;
     case 26://Pinterest Likes
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("") == -1)
+          window.open("http://addmefast.com/free_points/", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 27://Reverbnation Fans
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("reverbnation_fan") == -1)
+          window.open("http://addmefast.com/free_points/reverbnation_fan", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 28://SoundCloud Follow
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("") == -1)
+          window.open("http://addmefast.com/free_points/", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 29://SoundCloud Plays
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("") == -1)
+          window.open("http://addmefast.com/free_points/", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 30://StumbleUpon
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("") == -1)
+          window.open("http://addmefast.com/free_points/", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
   }
 //}
