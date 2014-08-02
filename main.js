@@ -1,4 +1,4 @@
-if(window.confirm("1")){
+if(window.confirm("2")){
   var url = window.location.href;
   console.log(url);
   var opt = 7;//Math.floor((Math.random() * 30) + 0);
@@ -64,7 +64,17 @@ if(window.confirm("1")){
   
     break;
     case 17://Ask.fm Likes
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("askfm_likes") == -1)
+          window.open("http://addmefast.com/free_points/askfm_likes", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        alert(document.getElementsByClassName("like hintable").length);
+        document.getElementsByClassName("like hintable")[0].click();
+        setTimeout(close,1500);
+      }
     break;
     case 18://Vine Followers
   
