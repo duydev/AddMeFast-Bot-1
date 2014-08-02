@@ -36,8 +36,17 @@
         setTimeout(closeWindow,2500);
       }
     break;
-    case 8://Twitter Tweets
-  
+    case 8://Twitter Tweets 
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("twitter") == -1)
+          window.open("http://addmefast.com/free_points/twitter", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("button selected submit")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 9://Twitter Retweets
   
