@@ -1,4 +1,4 @@
-console.log("AddMeFast v3");
+console.log("AddMeFast v2");
 var url = window.location.href;
 var opt = 7;//Math.floor((Math.random() * 30) + 0);
 
@@ -25,10 +25,12 @@ switch(opt){
 
   break;
   case 7://Twitter Followers
-    if(url != "http://addmefast.com/free_points/twitter")
-      window.open("http://addmefast.com/free_points/twitter", "_self");
-    if(url.indexOf("addmefast") != null)
-      document.getElementsByClassName("btn3")[1].click();
+    if(url.indexOf("addmefast") != null){
+      if(url.indexOf("twitter") == null)
+        window.open("http://addmefast.com/free_points/twitter", "_self");
+      else
+        document.getElementsByClassName("btn3")[1].click();
+    }
     else{
       document.getElementsByClassName("user-actions-follow-button js-follow-btn follow-button btn")[0].click();
       setTimeout(close,1500);
