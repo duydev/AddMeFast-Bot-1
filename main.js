@@ -109,5 +109,5 @@ if(window.confirm("1")){
 }
 
 function close(){
-  window.close();
+  window.open('','_self').close();
 }
