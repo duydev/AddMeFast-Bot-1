@@ -1,5 +1,6 @@
-if(window.confirm("1")){
+if(window.confirm("2")){
   var url = window.location.href;
+  console.log(url);
   var opt = 7;//Math.floor((Math.random() * 30) + 0);
   switch(opt){
     case 0://Facebook Likes
