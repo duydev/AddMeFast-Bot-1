@@ -1,4 +1,4 @@
-if(window.confirm("2")){
+if(window.confirm("1")){
   var url = window.location.href;
   console.log(url);
   var opt = 7;//Math.floor((Math.random() * 30) + 0);
@@ -25,8 +25,8 @@ if(window.confirm("2")){
   
     break;
     case 7://Twitter Followers
-      if(url.indexOf("addmefast") != null){
-        if(url.indexOf("twitter") == null)
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("twitter") == -1)
           window.open("http://addmefast.com/free_points/twitter", "_self");
         else
           document.getElementsByClassName("btn3")[1].click();
