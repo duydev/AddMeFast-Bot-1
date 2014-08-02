@@ -146,20 +146,20 @@
           document.getElementsByClassName("btn3")[1].click();
       }
       else{
-        document.getElementsByClassName("")[0].click();
-        setTimeout(closeWindow,2500);
+        document.getElementById("profile_become_a_fan_button_"+CURRENT_PAGE_OBJECT).click();
+        setTimeout(closeWindow,4500);
       }
     break;
     case 28://SoundCloud Follow
       if(url.indexOf("addmefast") != -1){
-        if(url.indexOf("") == -1)
-          window.open("http://addmefast.com/free_points/", "_self");
+        if(url.indexOf("soundcloud_follow") == -1)
+          window.open("http://addmefast.com/free_points/soundcloud_follow", "_self");
         else
           document.getElementsByClassName("btn3")[1].click();
       }
       else{
-        document.getElementsByClassName("")[0].click();
-        setTimeout(closeWindow,2500);
+        document.getElementsByClassName("sc-button-follow sc-button sc-button-cta sc-button-medium sc-button-responsive")[0].click();
+        setTimeout(closeWindow,3500);
       }
     break;
     case 29://SoundCloud Plays
