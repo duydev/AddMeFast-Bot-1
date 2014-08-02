@@ -38,8 +38,8 @@
     break;
     case 8://Twitter Tweets 
       if(url.indexOf("addmefast") != -1){
-        if(url.indexOf("twitter") == -1)
-          window.open("http://addmefast.com/free_points/twitter", "_self");
+        if(url.indexOf("twitter_tweets") == -1)
+          window.open("http://addmefast.com/free_points/twitter_tweets", "_self");
         else
           document.getElementsByClassName("btn3")[1].click();
       }
@@ -49,10 +49,28 @@
       }
     break;
     case 9://Twitter Retweets
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("twitter_retweets") == -1)
+          window.open("http://addmefast.com/free_points/twitter_retweets", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("button submit selected")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 10://Twitter Favorites
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("twitter_favorites") == -1)
+          window.open("http://addmefast.com/free_points/twitter_favorites", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("button submit selected")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 11://YouTube Subscribe
   
