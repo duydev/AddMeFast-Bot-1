@@ -1,4 +1,4 @@
-if(window.confirm("1")){
+//if(window.confirm("1")){
   var url = window.location.href;
   console.log(url);
   var opt = 17;//Math.floor((Math.random() * 30) + 0);
@@ -33,7 +33,7 @@ if(window.confirm("1")){
       }
       else{
         document.getElementsByClassName("user-actions-follow-button js-follow-btn follow-button btn")[0].click();
-        setTimeout(close,1500);
+        setTimeout(closeWindow,2500);
       }
     break;
     case 8://Twitter Tweets
@@ -71,9 +71,8 @@ if(window.confirm("1")){
           document.getElementsByClassName("btn3")[1].click();
       }
       else{
-        alert(document.getElementsByClassName("like hintable").length);
         document.getElementsByClassName("like hintable")[0].click();
-        setTimeout(closeWindow,1500);
+        setTimeout(closeWindow,2500);
       }
     break;
     case 18://Vine Followers
@@ -116,7 +115,7 @@ if(window.confirm("1")){
   
     break;
   }
-}
+//}
 
 function closeWindow() {
   window.open('','_parent','');
