@@ -73,7 +73,7 @@ if(window.confirm("2")){
       else{
         alert(document.getElementsByClassName("like hintable").length);
         document.getElementsByClassName("like hintable")[0].click();
-        setTimeout(function(){window.open('','_self').close();},1500);
+        setTimeout(closeWindow,1500);
       }
     break;
     case 18://Vine Followers
@@ -118,6 +118,7 @@ if(window.confirm("2")){
   }
 }
 
-function close(){
-  window.open('','_self').close();
+function closeWindow() {
+  window.open('','_parent','');
+  window.close();
 }
