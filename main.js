@@ -1,4 +1,4 @@
-if(window.confirm("2")){
+if(window.confirm("1")){
   var url = window.location.href;
   console.log(url);
   var opt = 17;//Math.floor((Math.random() * 30) + 0);
