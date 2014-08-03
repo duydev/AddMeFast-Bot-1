@@ -19,11 +19,7 @@
   
     break;
     case 5://Instagram Followers
-  
-    break;
     case 6://Instagram Likes
-  
-    break;
     case 7://Twitter Followers
       if(url.indexOf("addmefast") != -1){
         if(url.indexOf("twitter") == -1)
@@ -73,23 +69,11 @@
       }
     break;
     case 11://YouTube Subscribe
-  
-    break;
     case 12://YouTube Likes
-  
-    break;
     case 13://YouTube Favorites
-  
-    break;
     case 14://YouTube Views
-  
-    break;
     case 15://Google Circles
-  
-    break;
     case 16://Google Share
-  
-    break;
     case 17://Ask.fm Likes
       if(url.indexOf("addmefast") != -1){
         if(url.indexOf("askfm_likes") == -1)
@@ -103,19 +87,31 @@
       }
     break;
     case 18://Vine Followers
-  
-    break;
     case 19://Vine Likes
-  
-    break;
     case 20://Vine Revines
-  
-    break;
     case 21://Vkontakte Pages
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("vkontakte_pages") == -1)
+          window.open("http://addmefast.com/free_points/vkontakte_pages", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{
+        document.getElementsByClassName("subscribe_button")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 22://Vkontakte Groups
-  
+      if(url.indexOf("addmefast") != -1){
+        if(url.indexOf("vkontakte_groups") == -1)
+          window.open("http://addmefast.com/free_points/vkontakte_groups", "_self");
+        else
+          document.getElementsByClassName("btn3")[1].click();
+      }
+      else{ 
+        document.getElementsByClassName("button_blue button_wide")[0].getElementsByTagName("button")[0].click();
+        setTimeout(closeWindow,2500);
+      }
     break;
     case 23://MySpace Friends
       if(url.indexOf("addmefast") != -1){
@@ -155,13 +151,13 @@
     break;
     case 26://Pinterest Likes
       if(url.indexOf("addmefast") != -1){
-        if(url.indexOf("") == -1)
-          window.open("http://addmefast.com/free_points/", "_self");
+        if(url.indexOf("pinterest_like") == -1)
+          window.open("http://addmefast.com/free_points/pinterest_like", "_self");
         else
           document.getElementsByClassName("btn3")[1].click();
       }
       else{
-        document.getElementsByClassName("")[0].click();
+        document.getElementsByClassName("LikeButton rounded PinLikeButton Button like leftRounded pinActionBarButton Module hasText medium btn")[0].click();
         setTimeout(closeWindow,2500);
       }
     break;
@@ -191,25 +187,23 @@
     break;
     case 29://SoundCloud Plays
       if(url.indexOf("addmefast") != -1){
-        if(url.indexOf("") == -1)
-          window.open("http://addmefast.com/free_points/", "_self");
+        if(url.indexOf("soundcloud_views") == -1)
+          window.open("http://addmefast.com/free_points/soundcloud_views", "_self");
         else
           document.getElementsByClassName("btn3")[1].click();
       }
-      else{
-        document.getElementsByClassName("")[0].click();
-        setTimeout(closeWindow,2500);
-      }
+      else
+        setTimeout(closeWindow,30000);
     break;
     case 30://StumbleUpon
       if(url.indexOf("addmefast") != -1){
-        if(url.indexOf("") == -1)
-          window.open("http://addmefast.com/free_points/", "_self");
+        if(url.indexOf("stumbleupon_followers") == -1)
+          window.open("http://addmefast.com/free_points/stumbleupon_followers", "_self");
         else
           document.getElementsByClassName("btn3")[1].click();
       }
       else{
-        document.getElementsByClassName("")[0].click();
+        document.getElementsByClassName("s-follow")[0].click();
         setTimeout(closeWindow,2500);
       }
     break;
