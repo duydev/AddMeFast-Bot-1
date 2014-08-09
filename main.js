@@ -7,10 +7,12 @@
       //document.getElementsByClassName("_42ft _4jy0 PageLikeButton _4jy4 _517h")[0].click()
     //break;
     case 1://Facebook Share
-  
+      document.getElementsByClassName("_42ft _4jy0 _4jy4 _4jy1 selected")[0].click();
+      setTimeout(closeWindow,2500);
     break;
     case 2://Facebook Followers
-  
+      document.getElementById("u_0_1l").click();
+      setTimeout(closeWindow,2500);
     break;
     case 3://Facebook Post Like
   
