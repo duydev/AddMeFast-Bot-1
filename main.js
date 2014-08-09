@@ -4,18 +4,8 @@
   var opt = 17;//Math.floor((Math.random() * 30) + 0);
   switch(opt){
     case 0://Facebook Likes
-  <button type="submit" id="u_0_22" data-ownerid="u_0_21" 
-  data-profileid="655270567832768" 
-  class="_42ft _4jy0 PageLikeButton _4jy4 _517h" 
-  value="1">
-  <i class="_3-8_ img sp_m5zUGIMREvf sx_07e95b">Like
-  </button>
-  <button id="u_jsonp_2_u" 
-  class="_42ft _4jy0 PageLikeButton _4jy4 _517h" 
-  type="submit" data-ownerid="u_jsonp_2_t" data-profileid="191406374208361" value="1">
-  <button id="u_jsonp_3_u" 
-  class="_42ft _4jy0 PageLikeButton _4jy4 _517h" type="submit" data-ownerid="u_jsonp_3_t" data-profileid="156638401186935" value="1">
-    break;
+      //document.getElementsByClassName("_42ft _4jy0 PageLikeButton _4jy4 _517h")[0].click()
+    //break;
     case 1://Facebook Share
   
     break;
