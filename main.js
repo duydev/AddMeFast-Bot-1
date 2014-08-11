@@ -1,7 +1,7 @@
-//if(window.confirm("1")){
+if(window.confirm("1")){
   var url = window.location.href;
   console.log(url);
-  var opt = 17;//Math.floor((Math.random() * 30) + 0);
+  var opt = Math.floor((Math.random() * 30) + 0);
   switch(opt){
     case 0://Facebook Likes
       //document.getElementsByClassName("_42ft _4jy0 PageLikeButton _4jy4 _517h")[0].click()
@@ -15,11 +15,10 @@
       setTimeout(closeWindow,2500);
     break;
     case 3://Facebook Post Like
-  
+      document.getElementsByClassName("UFILikeLink")[0].click();
+      setTimeout(closeWindow,2500);
     break;
     case 4://Facebook Post Share
-  
-    break;
     case 5://Instagram Followers
     case 6://Instagram Likes
     case 7://Twitter Followers
@@ -71,8 +70,11 @@
       }
     break;
     case 11://YouTube Subscribe
-    case 12://YouTube Likes
+      document.getElementsByClassName("yt-uix-button yt-uix-button-size-default yt-uix-button-subscribe-branded yt-uix-button-has-icon yt-uix-subscription-button yt-can-buffer")[0].click();
+      setTimeout(closeWindow,2500);
     case 13://YouTube Favorites
+      document.getElementById("watch-like").click();
+      setTimeout(closeWindow,2500);
     case 14://YouTube Views
     case 15://Google Circles
     case 16://Google Share
@@ -210,7 +212,7 @@
       }
     break;
   }
-//}
+}
 
 function closeWindow() {
   window.open('','_parent','');
