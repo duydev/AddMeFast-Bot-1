@@ -1,4 +1,4 @@
-if(window.confirm("1")){
+if(window.confirm("2")){
   var url = window.location.href;
   console.log(url);
   var opt = 2;//Math.floor((Math.random() * 30) + 0);
@@ -10,7 +10,7 @@ if(window.confirm("1")){
       //iimPlay("AddMeFast\");
     break;
     case 2://Facebook Followers
-      iimPlay("Facebook Followers");
+      iimPlay("AddMeFast\\Facebook Followers.iim");
     break;
     case 3://Facebook Post Like
       document.getElementsByClassName("UFILikeLink")[0].click();
