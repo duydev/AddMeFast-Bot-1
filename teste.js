@@ -10,7 +10,7 @@ if(window.confirm("2")){
       //iimPlay("AddMeFast\");
     break;
     case 2://Facebook Followers
-      iimPlay("AddMeFast\\Facebook Followers");
+      iimPlay("Facebook Followers");
     break;
     case 3://Facebook Post Like
       document.getElementsByClassName("UFILikeLink")[0].click();
